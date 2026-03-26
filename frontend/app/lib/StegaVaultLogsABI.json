@@ -1,0 +1,214 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_action",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_technique",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_dataHash",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_vaultId",
+				"type": "string"
+			}
+		],
+		"name": "addLog",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllLogs",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "action",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "technique",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dataHash",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "vaultId",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct StegaSphereLogs.Log[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getMyLogs",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "action",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "technique",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dataHash",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "vaultId",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct StegaSphereLogs.Log[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_vaultId",
+				"type": "string"
+			}
+		],
+		"name": "getLogsByVaultId",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "action",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "technique",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dataHash",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "vaultId",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct StegaSphereLogs.Log[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "user",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "action",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "technique",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "dataHash",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "vaultId",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "LogCreated",
+		"type": "event"
+	}
+]
